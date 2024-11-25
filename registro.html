@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="imagenes/logo/Logo.ico">
+    <title>Registro</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecera">
+            <img class="logo" src="imagenes/logo/Logo.avif" alt="">
+            <div class="buscador-diseño">
+                <form class="navegador" action="buscar" method="post">
+                    <input type="text" name="buscador_footer" id="buscador_footer" placeholder="BUSCAR..." required>
+                    <button class="boton-navegador"><img class="busqueda-icono" src="imagenes/icono/icono/busqueda.png" alt=""></button>
+                </form>
+            </div>
+            <div class="">
+                <a href="registro.html"><img class="icono" src="imagenes/icono/icono/usuario.png"></a>
+                <a href="borrar_producto.html"><img class="icono" src="imagenes/icono/icono/bolsa-de-la-compra.png"></a>
+            </div>
+        </div>
+        <div class="lower-navigation">
+            <div class="dropdown">
+                <img class="icono boton_menu" onclick="anadir()" src="imagenes/icono/icono/alinear-justificar.png">
+                <div class="menu">
+                    <a href="inicio.html">Inicio</a>
+                    <a href="camisetas.php">Camisetas</a>
+                    <a href="prints.php">Prints</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="contenedor-registro">
+
+        <form class="registro" action="PHP/registro.php" method="post">
+            <u>
+                <h1 class="titulo">REGISTRATE</h1>
+            </u>
+
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+
+            <label for="email">Correo: </label>
+            <input type="text" name="email" id="email" placeholder="Email" required>
+
+            <label for="contraseña">Contraseña: </label>
+            <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required>
+
+            <label for="telefono">Telefono: </label>
+            <input type="text" name="telefono" id="telefono" placeholder="Telefono" required>
+
+            <p class="texto-centrado">Al registrarte, apectas nuestras Condiciones de uso y Politicas de Privicidad</p>
+
+            <div class="centrar">
+                <input class="boton" type="submit" value="Registrarte">
+            </div>
+            <div class="centrar">
+                <p>¿Ya tienes cuenta?</p>
+                <a href="inicio-registro.html">Iniciar</a>
+            </div>
+            <div class="centrar">
+                <p>¿Borrar usuario?</p>
+                <a href="borrar_usuario.html">Aquí</a>
+            </div>
+        </form>
+    </div>
+
+    <!--CONEXION CON JS-->
+
+    <script src="JS/animaciones.js"></script>
+
+    <!--FIN DE LA PAGINA-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Politicas</h4>
+                    <ul>
+                        <li><a href="#">Nuestras Politicas</a></li>
+                        <li><a href="#">Términos De Servicio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Atención Al cliente</a></li>
+                        <li><a href="#">Politica De Privicidad</a></li>
+                        <li><a href="#">Condiciones Generales De La Web</a></li>
+                        <li><a href="#">Politica De Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <h4>Redes Sociales</h4>
+                    <div>
+                        <img src="imagenes/icono/redes-sociales/facebook.png">
+                        <img src="imagenes/icono/redes-sociales/gorjeo.png">
+                        <img src="imagenes/icono/redes-sociales/tik-tok.png">
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Metodo de pago</h4>
+                    <div>
+                        <img class="pago" src="imagenes/fotos/metodo-de-pago/metodo-de-pago.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="grupo-1">
+        <samp class="copyright">&copy; 2024 ItemPocket España</samp>
+    </div>
+
+</body>
+
+</html>

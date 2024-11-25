@@ -1,0 +1,272 @@
+/*-----------------------BODY-----------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  background-color: #ffffff;
+  align-items: center;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+
+}
+
+.icono {
+  width: 30px;
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 1px 2%;
+}
+
+/*-----------------------HEADER-----------------------*/
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 150px;
+}
+
+.cabecera {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*SEPARACION ENTRE LOS A*/
+  justify-content: space-between;
+  padding: 20px 5%;
+}
+
+.lower-navigation {
+  word-spacing: 20px;
+  text-align: center;
+  flex-direction: row;
+  background-color: #9CAFAA;
+  padding: 10px 5%;
+}
+
+.buscador-diseño {
+  margin-right: 60px;
+}
+
+form {
+  position: relative;
+}
+
+.busqueda-icono {
+  width: 50%;
+}
+
+.navegador input {
+  justify-content: center;
+  border-radius: 25px;
+  padding: 8px 40px 8px 20px;
+  border: solid #D6DAC8 2px;
+}
+
+.boton-navegador {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  border-radius: 70%;
+  border: solid #D6DAC8 2px;
+  background-color: #D6DAC8;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2e2e2f;
+}
+
+/*-----------------------DESPEGLABE-----------------------*/
+
+.boton_menu {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #D6DAC8;
+    padding: 20px;
+    top: 172px;
+    left: -500px;
+    width: 30%;
+    transition: all 0.5ms;
+  }
+
+  .menu a {
+    color: #2e2e2f;
+    margin: 5px;
+  }
+
+  .boton_menu {
+    display: block;
+  }
+}
+
+.activo {
+  left: 0px;
+}
+
+/*-----------------------FORMULARIO-----------------------*/
+.form-container {
+  margin: 30px auto;
+  background-color: white;
+  padding: 20px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.estilo-centro {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 4%;
+  color: #EFBC9B;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #000000;
+}
+
+input[type="radio"] {
+  margin: 5px 0;
+}
+
+.boton-formulario {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.boton-formulario:hover {
+  background-color: #EFBC9B;
+  color: #000000;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #e7f3fe;
+  color: #31708f;
+  display: none;
+}
+
+/*-----------------------FOOTER-----------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+  list-style: none;
+}
+
+.footer {
+  background-color: #9CAFAA;
+  padding: 50px 0;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.footer-links {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-links h4 {
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 2px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.footer-links ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  margin-bottom: 15px;
+  transform: all, 3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #D6DAC8;
+  padding-left: 6px;
+  font-weight: bold;
+}
+
+.social-links h4 {
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 2px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.social-links img {
+  padding: 3px;
+  display: inline-block;
+  width: 25px;
+  background-color: #9CAFAA;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all .5s ease;
+}
+
+.social-links img:hover {
+  background-color: #D6DAC8;
+}
+
+.pago {
+  width: 300px;
+}
+
+.grupo-1 {
+  background-color: #D6DAC8;
+  padding: 15px 10px;
+  text-align: center;
+  color: #3c3a3a;
+  justify-content: space-between;
+}

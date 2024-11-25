@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos-formularioDiosGriego.css">
+    <link rel="icon" href="imagenes/logo/Logo.ico">
+    <title>¿Qué Dios eres?</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecera">
+            <img class="logo" src="imagenes/logo/Logo.avif" alt="">
+            <div class="buscador-diseño">
+                <form class="navegador" action="buscar" method="post">
+                    <input type="text" name="buscador_footer" id="buscador_footer" placeholder="BUSCAR..." required>
+                    <button class="boton-navegador"><img class="busqueda-icono" src="imagenes/icono/icono/busqueda.png"
+                            alt=""></button>
+                </form>
+            </div>
+            <div class="">
+                <a href="registro.html"><img class="icono" src="imagenes/icono/icono/usuario.png"></a>
+                <a href="borrar_producto.html"><img class="icono" src="imagenes/icono/icono/bolsa-de-la-compra.png"></a>
+            </div>
+        </div>
+        <div class="lower-navigation">
+            <div class="dropdown">
+                <img class="icono boton_menu" onclick="anadir()" src="imagenes/icono/icono/alinear-justificar.png">
+                <div class="menu">
+                    <a href="inicio.html">Inicio</a>
+                    <a href="camisetas.php">Camisetas</a>
+                    <a href="prints.php">Prints</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--CONEXION CON JS-->
+
+    <script src="JS/animaciones.js"></script>
+
+    <!--FORMULARIO DE DIOSES-->
+    <div class="form-container">
+        <h1 class="estilo-centro">¿Qué Dios eres?</h1>
+        <form id="quizForm" action="PHP/formularioDiosGriego.php" method="post">
+            <div class="estilo_nombre">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre de usuario" required>
+            </div>
+
+            <div class="question">
+                <label>1. ¿Cuál es tu elemento favorito?</label><br>
+                <input type="radio" name="q1" value="fuego"> Fuego<br>
+                <input type="radio" name="q1" value="agua"> Agua<br>
+                <input type="radio" name="q1" value="tierra"> Tierra<br>
+                <input type="radio" name="q1" value="aire"> Aire<br>
+            </div>
+            <div class="question">
+                <label>2. ¿Qué actividad prefieres?</label><br>
+                <input type="radio" name="q2" value="pelear"> Pelear<br>
+                <input type="radio" name="q2" value="navegar"> Navegar<br>
+                <input type="radio" name="q2" value="cultivar"> Cultivar<br>
+                <input type="radio" name="q2" value="viajar"> Viajar<br>
+            </div>
+            <div class="question">
+                <label>3. ¿Cuál es tu estación del año favorita?</label><br>
+                <input type="radio" name="q3" value="verano"> Verano<br>
+                <input type="radio" name="q3" value="invierno"> Invierno<br>
+                <input type="radio" name="q3" value="primavera"> Primavera<br>
+                <input type="radio" name="q3" value="otoño"> Otoño<br>
+            </div>
+            <button class="boton-formulario" type="submit">Descubre tu Dios</button>
+            <div id="result" class="result"></div>
+        </form>
+    </div>
+
+    <!--CONEXION CON JS-->
+
+    <script src="JS/formularioDiosGriego.js"></script>
+
+    <!--FIN DE LA PAGINA-->
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Politicas</h4>
+                    <ul>
+                        <li><a href="#">Nuestras Politicas</a></li>
+                        <li><a href="#">Términos De Servicio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Atención Al cliente</a></li>
+                        <li><a hrFef="#">Politica De Privicidad</a></li>
+                        <li><a href="#">Condiciones De La Web</a></li>
+                        <li><a href="#">Politica De Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <h4>Redes Sociales</h4>
+                    <div>
+                        <img src="imagenes/icono/redes-sociales/facebook.png">
+                        <img src="imagenes/icono/redes-sociales/gorjeo.png">
+                        <img src="imagenes/icono/redes-sociales/tik-tok.png">
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Metodo de pago</h4>
+                    <div>
+                        <img class="pago" src="imagenes/fotos/metodo-de-pago/metodo-de-pago.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="grupo-1">
+        <samp class="copyright">&copy; 2024 ItemPocket España</samp>
+    </div>
+</body>
+
+</html>
